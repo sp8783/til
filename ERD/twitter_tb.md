@@ -31,7 +31,7 @@
 ## replies
 
 |id|author_id|tweet_id|replied_tweet_id|created_at|updated_at|
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 |1|2|2|1|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 |2|1|4||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 
