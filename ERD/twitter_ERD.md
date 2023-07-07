@@ -7,6 +7,8 @@ erDiagram
 	timeline ||--o{ retweets : ""
 	users ||--o{ tweets : ""
 	users ||--o{ replies : ""
+	users ||--o{ quote_retweets : ""
+	users ||--o{ retweets : ""
 	users ||--o{ replied_users : ""
 	users ||--o{ followers : ""
 	users ||--o{ lists : ""
@@ -15,6 +17,7 @@ erDiagram
 	tweets ||--|| quote_retweets : ""
 	tweets ||--|| retweets : ""
 	replies ||--|{ replied_users : ""
+	replies }o--|| quote_retweets : ""
 	lists ||--|{ list_members : ""
 
 	timeline {
@@ -49,6 +52,7 @@ erDiagram
 	}
 	replies {
 	  bigint id PK
+	  bigint author_id FK
 	  bigint tweet_id FK
 	  bigint replied_tweet_id FK
 	  timestamp created_at
@@ -63,12 +67,14 @@ erDiagram
 	}
 	quote_retweets {
 	  bigint id PK
+	  bigint author_id FK
 	  bigint tweet_id FK
 	  bigint quoted_tweet_id FK
 	  timestamp created_at
 	}
 	retweets {
 	  bigint id PK
+	  bigint author_id FK
 	  bigint retweeted_tweet_id FK
 	  timestamp created_at
 	}

@@ -30,31 +30,31 @@
 
 ## replies
 
-|id|tweet_id|replied_tweet_id|created_at|updated_at|
-|---|---|---|---|---|---|
-|1|2|1|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-|2|4||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|id|author_id|tweet_id|replied_tweet_id|created_at|updated_at|
+|---|---|---|---|---|---|---|
+|1|2|2|1|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|2|1|4||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 
 ## replied_users
 
 |id|reply_id|replied_user_id|created_at|updated_at|
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |1|1|1|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-|2|2|2|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-|3|2|4|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|2|2|4|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|3|2|5|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 
 ## quote_retweets
 
-|id|tweet_id|quoted_tweet_id|created_at|
+|id|author_id|tweet_id|quoted_tweet_id|created_at|
 |---|---|---|---|---|
-|1|3|1|YYYY-MM-DD hh:mm:ss|
-|2|4|1|YYYY-MM-DD hh:mm:ss|
+|1|3|3|1|YYYY-MM-DD hh:mm:ss|
+|2|1|4|1|YYYY-MM-DD hh:mm:ss|
 
 ## retweets
 
-|id|retweeted_tweet_id|created_at|
+|id|author_id|retweeted_tweet_id|created_at|
 |---|---|---|---|
-|1|1|YYYY-MM-DD hh:mm:ss|
+|1|4|1|YYYY-MM-DD hh:mm:ss|
 
 ## followers
 
