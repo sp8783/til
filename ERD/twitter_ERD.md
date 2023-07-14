@@ -13,11 +13,10 @@ erDiagram
 	users ||--o{ followers : ""
 	users ||--o{ lists : ""
 	users ||--o{ list_members : ""
-	tweets ||--|{ replies : ""
+	tweets ||--|| replies : ""
 	tweets ||--|| quote_retweets : ""
-	tweets ||--|| retweets : ""
+	tweets ||--|{ retweets : ""
 	replies ||--|{ replied_users : ""
-	replies }o--|| quote_retweets : ""
 	lists ||--|{ list_members : ""
 
 	timeline {
