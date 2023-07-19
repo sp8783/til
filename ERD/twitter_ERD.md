@@ -1,10 +1,5 @@
 ```mermaid
 erDiagram
-	timeline ||--o{ users : ""
-	timeline ||--o{ tweets : ""
-	timeline ||--o{ replies : ""
-	timeline ||--o{ quote_retweets : ""
-	timeline ||--o{ retweets : ""
 	users ||--o{ tweets : ""
 	users ||--o{ replies : ""
 	users ||--o{ quote_retweets : ""
@@ -15,20 +10,10 @@ erDiagram
 	users ||--o{ list_members : ""
 	tweets ||--|| replies : ""
 	tweets ||--|| quote_retweets : ""
-	tweets ||--|{ retweets : ""
+	tweets ||--|| retweets : ""
 	replies ||--|{ replied_users : ""
 	lists ||--|{ list_members : ""
 
-	timeline {
-	  bigint id PK
-	  bigint author_id FK
-	  bigint tweet_id FK
-	  bigint reply_id FK
-	  bigint quote_id FK
-	  bigint retweet_id FK
-	  timestamp created_at
-	  timestamp updated_at
-	}
 	users {
 	  bigint id PK
 	  varchar15 user_name FK
@@ -74,6 +59,7 @@ erDiagram
 	retweets {
 	  bigint id PK
 	  bigint author_id FK
+	  bigint tweet_id FK
 	  bigint retweeted_tweet_id FK
 	  timestamp created_at
 	}

@@ -1,28 +1,11 @@
-## timeline
-
-|id|author_id|tweet_id|reply_id|quote_id|retweet_id|created_at|updated_at|
-|---|---|---|---|---|---|---|---|
-|1|1|1||||YYYY/MM/DD|YYYY/MM/DD|
-|2|2|2|1|||YYYY/MM/DD|YYYY/MM/DD|
-|3|3||||1|YYYY/MM/DD|YYYY/MM/DD|
-|4|1|3||1||YYYY/MM/DD|YYYY/MM/DD|
-
-## users
-
-|id|user_name|nickname|profile|location|website|birthday|profile_image|header_image|created_at|updated_at|deleted_at|
-|---|---|---|---|---|---|---|---|---|---|---|---|
-|1|1|A|hello||test_a@example.com|YYYY/MM/DD|/hoge/foo/image.png||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-|2|2|B||日本||YYYY/MM/DD||/hoge/bar/image.png|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-|3|3|C||japan|||||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-|4|4|D|||test_d@example.com||||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-
 ## tweets
 
 |id|author_id|content|created_at|updated_at|
 |---|---|---|---|---|
 |1|1|hello|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 |2|2|hi|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-|3|1|how are you?|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|3|3||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|4|1|how are you?|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 
 ## replies
 
@@ -40,13 +23,22 @@
 
 |id|author_id|tweet_id|quoted_tweet_id|created_at|
 |---|---|---|---|---|
-|1|1|3|2|YYYY-MM-DD hh:mm:ss|
+|1|1|4|2|YYYY-MM-DD hh:mm:ss|
 
 ## retweets
 
-|id|author_id|retweeted_tweet_id|created_at|
-|---|---|---|---|
-|1|3|2|YYYY-MM-DD hh:mm:ss|
+|id|author_id|tweet_id|retweeted_tweet_id|created_at|
+|---|---|---|---|---|
+|1|3|3|2|YYYY-MM-DD hh:mm:ss|
+
+## users
+
+|id|user_name|nickname|profile|location|website|birthday|profile_image|header_image|created_at|updated_at|deleted_at|
+|---|---|---|---|---|---|---|---|---|---|---|---|
+|1|1|A|hello||test_a@example.com|YYYY/MM/DD|/hoge/foo/image.png||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|2|2|B||日本||YYYY/MM/DD||/hoge/bar/image.png|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|3|3|C||japan|||||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|4|4|D|||test_d@example.com||||YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 
 ## followers
 
