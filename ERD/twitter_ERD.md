@@ -4,14 +4,12 @@ erDiagram
 	users ||--o{ replies : ""
 	users ||--o{ quote_retweets : ""
 	users ||--o{ retweets : ""
-	users ||--o{ replied_users : ""
 	users ||--o{ followers : ""
 	users ||--o{ lists : ""
 	users ||--o{ list_members : ""
 	tweets ||--|| replies : ""
 	tweets ||--|| quote_retweets : ""
 	tweets ||--|| retweets : ""
-	replies ||--|{ replied_users : ""
 	lists ||--|{ list_members : ""
 
 	users {
@@ -36,29 +34,19 @@ erDiagram
 	}
 	replies {
 	  bigint id PK
-	  bigint author_id FK
 	  bigint tweet_id FK
 	  bigint replied_tweet_id FK
 	  timestamp created_at
 	  timestamp updated_at
 	}
-	replied_users {
-	  bigint id PK
-	  bigint reply_id FK
-	  bigint replied_user_id FK
-	  timestamp created_at
-	  timestamp updated_at
-	}
 	quote_retweets {
 	  bigint id PK
-	  bigint author_id FK
 	  bigint tweet_id FK
 	  bigint quoted_tweet_id FK
 	  timestamp created_at
 	}
 	retweets {
 	  bigint id PK
-	  bigint author_id FK
 	  bigint tweet_id FK
 	  bigint retweeted_tweet_id FK
 	  timestamp created_at

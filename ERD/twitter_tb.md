@@ -9,27 +9,21 @@
 
 ## replies
 
-|id|author_id|tweet_id|replied_tweet_id|created_at|updated_at|
-|---|---|---|---|---|---|
-|1|2|2|1|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
-
-## replied_users
-
-|id|reply_id|replied_user_id|created_at|updated_at|
+|id|tweet_id|replied_tweet_id|created_at|updated_at|
 |---|---|---|---|---|
-|1|1|1|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
+|1|2|1|YYYY-MM-DD hh:mm:ss|YYYY-MM-DD hh:mm:ss|
 
 ## quote_retweets
 
-|id|author_id|tweet_id|quoted_tweet_id|created_at|
-|---|---|---|---|---|
-|1|1|4|2|YYYY-MM-DD hh:mm:ss|
+|id|tweet_id|quoted_tweet_id|created_at|
+|---|---|---|---|
+|1|4|2|YYYY-MM-DD hh:mm:ss|
 
 ## retweets
 
-|id|author_id|tweet_id|retweeted_tweet_id|created_at|
-|---|---|---|---|---|
-|1|3|3|2|YYYY-MM-DD hh:mm:ss|
+|id|tweet_id|retweeted_tweet_id|created_at|
+|---|---|---|---|
+|1|3|2|YYYY-MM-DD hh:mm:ss|
 
 ## users
 
