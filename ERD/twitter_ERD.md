@@ -7,9 +7,9 @@ erDiagram
 	users ||--o{ followers : ""
 	users ||--o{ lists : ""
 	users ||--o{ list_members : ""
-	tweets ||--|| replies : ""
-	tweets ||--|| quote_retweets : ""
-	tweets ||--|| retweets : ""
+	tweets ||--o{ replies : ""
+	tweets ||--o{ quote_retweets : ""
+	tweets ||--o{ retweets : ""
 	lists ||--|{ list_members : ""
 
 	users {
